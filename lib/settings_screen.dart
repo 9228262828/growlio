@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 
 const appVersion = '1.0.0';
-const lastUpdated = 'June 29, 2026';
+const lastUpdated = 'june, 2026';
 
 class SettingsScreen extends StatelessWidget {
   final bool darkMode;
