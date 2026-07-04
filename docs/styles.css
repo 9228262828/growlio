@@ -1,12 +1,12 @@
 :root {
-  --green: #20e070;
-  --dark: #07130d;
-  --black: #050807;
-  --field: #0b3d22;
-  --card: #0d1a12;
+  --leaf: #3e9f4f;
+  --leaf-dark: #145c32;
+  --cream: #fff8ea;
+  --soil: #7a4a27;
+  --mint: #e8f7df;
   --white: #ffffff;
-  --muted: rgba(255,255,255,.72);
-  --line: rgba(32,224,112,.18);
+  --muted: #607566;
+  --line: rgba(62, 159, 79, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -15,10 +15,10 @@ body {
   margin: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(32,224,112,.18), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(11,61,34,.55), transparent 36%),
-    var(--black);
-  color: var(--white);
+    radial-gradient(circle at top left, rgba(62,159,79,.22), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(122,74,39,.18), transparent 32%),
+    var(--cream);
+  color: var(--leaf-dark);
   line-height: 1.75;
 }
 
@@ -34,23 +34,21 @@ header {
   width: 100%;
   max-width: 920px;
   padding: 34px 24px;
-  background: rgba(13,26,18,.76);
+  background: rgba(255,255,255,.78);
   border: 1px solid var(--line);
-  border-radius: 34px;
-  box-shadow: 0 24px 70px rgba(32,224,112,.12);
+  border-radius: 36px;
+  box-shadow: 0 24px 70px rgba(20,92,50,.14);
 }
 
 .logo-mark {
-  width: 86px;
-  height: 86px;
+  width: 88px;
+  height: 88px;
   margin: 0 auto 18px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  background: var(--green);
-  color: var(--black);
-  font-size: 42px;
-  font-weight: 900;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--mint), var(--leaf));
+  font-size: 44px;
 }
 
 h1 {
@@ -61,8 +59,8 @@ h1 {
 }
 
 .hero p {
-  max-width: 650px;
   margin: 12px auto 0;
+  max-width: 650px;
   color: var(--muted);
   font-weight: 700;
 }
@@ -76,18 +74,13 @@ nav {
 }
 
 nav a {
-  color: var(--white);
+  color: var(--leaf-dark);
   text-decoration: none;
   font-weight: 900;
   padding: 10px 15px;
   border-radius: 999px;
-  background: rgba(255,255,255,.08);
+  background: white;
   border: 1px solid var(--line);
-}
-
-nav a:hover {
-  background: var(--green);
-  color: var(--black);
 }
 
 main {
@@ -97,25 +90,24 @@ main {
 }
 
 .card {
-  background: rgba(13,26,18,.9);
+  background: rgba(255,255,255,.9);
   border: 1px solid var(--line);
   border-radius: 26px;
   padding: 24px;
   margin-bottom: 16px;
+  box-shadow: 0 14px 34px rgba(20,92,50,.06);
 }
 
 .card h2 {
   margin: 0 0 10px;
-  color: var(--green);
+  color: var(--leaf);
   font-size: 22px;
 }
 
-.card p { margin: 8px 0; }
-
 .badge {
   display: inline-flex;
-  background: var(--green);
-  color: var(--black);
+  background: var(--leaf);
+  color: white;
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 14px;
@@ -131,7 +123,7 @@ main {
 }
 
 .feature {
-  background: rgba(255,255,255,.06);
+  background: white;
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 22px;
@@ -139,7 +131,7 @@ main {
 
 .feature strong {
   display: block;
-  color: var(--green);
+  color: var(--leaf-dark);
   font-size: 18px;
   margin-bottom: 6px;
 }
@@ -158,5 +150,4 @@ footer {
   header { min-height: 300px; padding: 26px 14px; }
   .hero { padding: 26px 18px; border-radius: 28px; }
   .grid { grid-template-columns: 1fr; }
-  h1 { letter-spacing: -2px; }
 }
